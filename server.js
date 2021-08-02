@@ -23,7 +23,7 @@ mongoose.connect(MONGODB_URI, {
 
 // routes
 app.use(require("./routes/api.js"));
-
+console.log(MONGODB_URI);
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
